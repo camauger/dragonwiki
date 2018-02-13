@@ -4,6 +4,13 @@ h2 { font-size: 130%;}
 h3 { font-size: 120%;}
 body { font-size: 115%;}
 
+header {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+
 main.session {
   h4 {
     font-size: 95%;
@@ -23,11 +30,23 @@ aside {
 
 /** Polices de caractère **/
 
-$font-primary: 'Goudy Bookletter 1911', serif;
-$font-special: 'Arial';
+$opensans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$eaglelake: 'Eagle Lake', cursive;
+$goudy: 'Goudy Bookletter 1911', serif;
+
+
+$font-primary: $goudy;
+$font-special: $raleway;
 
 body {
   font-family: $font-primary;
+}
+
+header {
+  h1 {
+    font-family: $eaglelake;
+  }
 }
 
 /** Styles de texte **/

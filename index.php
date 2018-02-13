@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="dragonwiki.css">
-    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
 
     <title></title>
   </head>
@@ -12,8 +12,9 @@
 <?php
 include 'header.php'
 ?>
-<div class="wrapper">
+<img src="./images/tombofannihilation.jpg" alt="">
 
+<div class="wrapper">
 
 <main>
 

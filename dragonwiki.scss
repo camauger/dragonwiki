@@ -1,3 +1,4 @@
+/** Importation des fichiers partiaux **/
 @import "mixins";
 @import "fonts";
 @import "colors";
@@ -139,6 +140,10 @@ nav {
   }
   a:hover {
   }
+}
+
+a.maintitle {
+      text-decoration: none;
 }
 }
 

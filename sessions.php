@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="dragonwiki.css">
-    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
+
 
     <title></title>
   </head>
   <body>
 <?php
-include 'header.php'
+include './header.php'
 ?>
 
 <main>
@@ -18,14 +19,14 @@ include 'header.php'
 
 
 <div class="grid">
-  <a href="sessions/session1.php">
+  <a href="./sessions/session1.php">
     <h3>Session 1</h3>
 <h2>Gloradan</h2>
 </a>
 </div>
 
 <div class="grid">
-  <a href="sessions/session2.php">
+  <a href="./sessions/session2.php">
     <h3>Session 2</h3>
   <h2>Le Bois des Fées</h2>
   </a>
