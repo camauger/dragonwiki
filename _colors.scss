@@ -1,0 +1,91 @@
+/** Palette de couleurs **/
+$background-color: #EEE5CE;
+$text-color: #141414;
+$border-color: #a9a9a9;
+$note-background: #eed5ce;
+$character-background: #e7eece;
+$quote-background: #dac795;
+$organization-background: #dac795;
+$nav-background: #352b12;
+$nav-border: darken($nav-background, 10%);
+$nav-color: $background-color;
+$footer-background: #352b12;
+
+/** Contrôle des couleurs **/
+html {
+  background-color: $background-color;
+  background-image: url("wikibackground.jpeg");
+}
+
+header {
+  border-color: $border-color;
+  background-color: none;
+}
+
+img {
+  width: 100%;
+}
+/** Headings **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $text-color;
+}
+
+main {
+  h2 {}
+
+  h4 {
+    color: darken($border-color, 10%);
+  }
+}
+
+aside {
+  h3 {}
+}
+
+
+header {
+  border: 1px solid;
+  border-color: $nav-background;
+nav {
+  ul {}
+
+  li {
+    background-color: $nav-background;
+    border-color: $nav-border;
+
+  }
+
+  a {
+    color: $nav-color;
+  }
+
+  li:hover {
+    background-color: lighten($nav-background, 10%);
+    border: 1px solid darken($nav-border, 10%);
+    transition: background-color, 0.3s;
+    transition: border, 0.3s;
+  }
+}
+}
+
+footer {
+  background-color: $footer-background;
+
+  nav {
+    div, a {
+      color: $background-color;
+      border-color: $background-color;
+    }
+  }
+}
+/** Couleurs des boîtes de la page d'accueil **/
+.grid {
+  background-color: darken($background-color, 10%);
+  border-color: darken($background-color, 20%);
+}

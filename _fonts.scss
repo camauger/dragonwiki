@@ -1,0 +1,54 @@
+/** Taille des polices **/
+h1 { font-size: 150%;}
+h2 { font-size: 130%;}
+h3 { font-size: 120%;}
+body { font-size: 115%;}
+
+main.session {
+  h4 {
+    font-size: 95%;
+  }
+}
+
+aside {
+  h3 {
+    font-size: 110%;
+
+  }
+}
+
+.quote {
+  font-size: 120%;
+}
+
+/** Polices de caractère **/
+
+$font-primary: 'Goudy Bookletter 1911', serif;
+$font-special: 'Arial';
+
+body {
+  font-family: $font-primary;
+}
+
+/** Styles de texte **/
+
+header {
+    text-align: center;
+}
+
+main.session {
+  h2 {
+    text-align: center;
+  }
+  h4  {
+    text-align: center;
+    font-style: italic;
+  }
+
+}
+
+aside {
+  h3 {
+    text-align: center;
+  }
+}

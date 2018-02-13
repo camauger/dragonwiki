@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/*********************
+BREAKPOINTS
+*********************/
+/** Triangle **/
+/** Taille des polices **/
+h1 {
+  font-size: 150%; }
+
+h2 {
+  font-size: 130%; }
+
+h3 {
+  font-size: 120%; }
+
+body {
+  font-size: 115%; }
+
+main.session h4 {
+  font-size: 95%; }
+
+aside h3 {
+  font-size: 110%; }
+
+.quote {
+  font-size: 120%; }
+
+/** Polices de caractère **/
+body {
+  font-family: "Goudy Bookletter 1911", serif; }
+
+/** Styles de texte **/
+header {
+  text-align: center; }
+
+main.session h2 {
+  text-align: center; }
+main.session h4 {
+  text-align: center;
+  font-style: italic; }
+
+aside h3 {
+  text-align: center; }
+
+/** Palette de couleurs **/
+/** Contrôle des couleurs **/
+html {
+  background-color: #EEE5CE;
+  background-image: url("wikibackground.jpeg"); }
+
+header {
+  border-color: #a9a9a9;
+  background-color: none; }
+
+img {
+  width: 100%; }
+
+/** Headings **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #141414; }
+
+main h4 {
+  color: #909090; }
+
+header {
+  border: 1px solid;
+  border-color: #352b12; }
+  header nav li {
+    background-color: #352b12;
+    border-color: #0f0c05; }
+  header nav a {
+    color: #EEE5CE; }
+  header nav li:hover {
+    background-color: #5b4a1f;
+    border: 1px solid black;
+    transition: background-color, 0.3s;
+    transition: border, 0.3s; }
+
+footer {
+  background-color: #352b12; }
+  footer nav div, footer nav a {
+    color: #EEE5CE;
+    border-color: #EEE5CE; }
+
+/** Couleurs des boîtes de la page d'accueil **/
+.grid {
+  background-color: #e1d1a8;
+  border-color: #d4bd82; }
+
+/** Boîtes de la page d'accueil **/
+.grid {
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 1em;
+  text-align: center; }
+  .grid a {
+    text-decoration: none;
+    text-transform: uppercase; }
+  @media (min-width: 37.5em) {
+    .grid {
+      width: 49%;
+      display: inline-block; } }
+
+@media (min-width: 37.5em) {
+  .grid:nth-of-type(2), .grid:nth-of-type(4) {
+    float: right; } }
+
+/** Headings **/
+h1, h2 {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+h3, h4, h5, h6 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+html {
+  width: 100%;
+  margin: auto; }
+
+/** Control Body and Footer Wrapper Width **/
+.wrapper {
+  width: 90%;
+  margin: auto; }
+  @media (min-width: 64em) {
+    .wrapper {
+      width: 100%;
+      max-width: 960px; } }
+
+header {
+  margin-bottom: 1em; }
+
+img {
+  width: 100%; }
+
+/** Paragraph Styles **/
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+main.session, aside {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em; }
+
+@media (min-width: 64em) {
+  main.session {
+    width: 65%;
+    display: inline-block; } }
+
+@media (min-width: 64em) {
+  aside {
+    width: 30%;
+    display: inline-block;
+    float: right; } }
+aside h3 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; }
+aside p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+aside div {
+  margin-bottom: 1em; }
+aside .note {
+  padding: 1em;
+  background-color: #eed5ce;
+  border: 1px solid #8c4531; }
+  aside .note a {
+    color: #663224; }
+  aside .note .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .note .author:before {
+      content: "-";
+      font-family: "Arial";
+      padding-right: 0.5em; }
+aside .character {
+  padding: 1em;
+  background-color: #e7eece;
+  border: 1px solid #788c31; }
+  aside .character a {
+    color: #586624; }
+  aside .character .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .character .author:before {
+      content: "-";
+      font-family: "Arial";
+      padding-right: 0.5em; }
+aside .quote {
+  padding: 1em;
+  background-color: #dac795;
+  border: 1px solid #53441d; }
+  aside .quote a {
+    color: #2d2510; }
+  aside .quote .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .quote .author:before {
+      content: "-";
+      font-family: "Arial";
+      padding-right: 0.5em; }
+aside .organization {
+  padding: 1em;
+  background-color: #dac795;
+  border: 1px solid #53441d; }
+  aside .organization a {
+    color: #2d2510; }
+  aside .organization .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .organization .author:before {
+      content: "-";
+      font-family: "Arial";
+      padding-right: 0.5em; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+aside hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+header nav ul {
+  list-style: none; }
+header nav li {
+  display: none; }
+  @media (min-width: 64em) {
+    header nav li {
+      display: inline-block;
+      border: 1px solid;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; } }
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase; }
+
+footer {
+  clear: both; }
+  footer .wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  footer nav div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid;
+    text-align: center;
+    padding: 1em; }
+    @media (min-width: 37.5em) {
+      footer nav div {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        border: none; } }
+  footer nav a {
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media (min-width: 37.5em) {
+      footer nav a {
+        text-decoration: underline;
+        text-transform: inherit; } }
+
+/*# sourceMappingURL=dragonwiki.css.map */

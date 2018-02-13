@@ -1,0 +1,23 @@
+/** Boîtes de la page d'accueil **/
+
+.grid {
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 1em;
+  text-align: center;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  @include breakpoint (phablet) {
+  width: 49%;
+  display: inline-block;
+}
+}
+
+.grid:nth-of-type(2), .grid:nth-of-type(4) {
+    @include breakpoint (phablet) {
+  float: right;
+}
+}
