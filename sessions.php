@@ -13,7 +13,9 @@
 <?php
 include './header.php'
 ?>
+<div class="banner tombofannihilation">
 
+</div>
 <main>
 <div class="wrapper">
 
@@ -42,6 +44,13 @@ include './header.php'
   <a href="sessions/session4.php">
     <h3>Session 4</h3>
   <h2>La Colère du Dragon Tortue</h2>
+  </a>
+</div>
+
+<div class="grid">
+  <a href="sessions/session5.php">
+    <h3>Session 5</h3>
+  <h2>Nyanzaru</h2>
   </a>
 </div>
 

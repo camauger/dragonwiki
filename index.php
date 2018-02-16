@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="dragonwiki.css">
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
 
-    <title></title>
+    <title>Le Tombeau de l'Annihilation</title>
   </head>
   <body>
 <?php
@@ -19,25 +19,36 @@ include 'header.php'
 <main>
 
 <div class="grid">
-  <a href="sessions.php">
+  <a href="./sessions.php">
 <h2>Sessions</h2>
+<p>Résumés des aventures</p>
 </a>
 </div>
 
 <div class="grid">
-    <a href="personnages.php">
+    <a href="./personnages.php">
   <h2>Personnages</h2>
+  <p>Les personnalités importantes de l'histoire</p>
   </a>
 </div>
 
 <div class="grid">
-    <a href="lieux.php">
+    <a href="./lieux.php">
   <h2>Lieux</h2>
+  <p>Endroits à explorer</p>
   </a>
 </div>
 <div class="grid">
-    <a href="organisations.php">
+    <a href="./organisations.php">
   <h2>Organisations</h2>
+  <p>Groupes politiques ou religieux influents</p>
+  </a>
+</div>
+
+<div class="grid">
+    <a href="./heros.php">
+  <h2>Héros</h2>
+  <p>Des aventuriers hors du commun</p>
   </a>
 </div>
 

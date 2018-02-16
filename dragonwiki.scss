@@ -1,31 +1,29 @@
 /** Importation des fichiers partiaux **/
+@import "colors";
+@import "config";
 @import "mixins";
 @import "fonts";
-@import "colors";
+@import "footer";
 @import "grid";
+@import "header";
 @import "headings";
-
+@import "nav";
+@import "style";
 
 * {
   margin: 0;
   padding: 0;
   line-height: 1.2;
-  font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-
 html {
-width: 100%;
-margin: auto;
-
+  width: 100%;
+  margin: auto;
+  background-color: $background-color;
+  background-image: url("wikibackground.jpeg");
 }
-
-body {
-
-}
-
 /** Control Body and Footer Wrapper Width **/
 .wrapper {
   width: 90%;
@@ -35,151 +33,30 @@ body {
     max-width: 960px;
   }
 }
-
-
-header {
-  margin-bottom: 1em;
-}
-
-img {
-  width: 100%;
-}
-
-/** Paragraph Styles **/
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-main.session, aside {
+/** Structure de la page avec main et aside **/
+aside,
+main {
   display: block;
   width: 100%;
+  margin-top: 1em;
   margin-bottom: 2em;
-
 }
 
 main.session {
-
   @include breakpoint (laptop) {
-  width: 65%;
-  display: inline-block;
-}
+    width: 65%;
+    display: inline-block;
+  }
 }
 
 aside {
-
   @include breakpoint (laptop) {
-  width: 30%;
-  display: inline-block;
-  float: right;
-}
+    width: 30%;
+    display: inline-block;
+    float: right;
+  }
 
-  h3 {
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;}
-  p {  margin-top: 0.5em;
-    margin-bottom: 0.5em;}
   div {
     margin-bottom: 1em;
   }
-
-  .note {
-@include sidenote($note-background);
-  }
-  .character {
-@include sidenote($character-background);
-  }
-  .quote {
-@include sidenote($quote-background);
-  }
-  .organization {
-    @include sidenote($organization-background);
-
-  }
-}
-
-
-
-
-hr {
-  border : 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-
-aside {
-
-  hr {
-    border : 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
-}
-
-header {
-nav {
-  ul {
-    list-style: none;
-  }
-  li {
-    display: none;
-    @include breakpoint (laptop) {
-      display: inline-block;
-      border: 1px solid;
-      padding-left: 1em;
-      padding-right: 1em;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
-  }
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  a:hover {
-  }
-}
-
-a.maintitle {
-      text-decoration: none;
-}
-}
-
-footer {
-  clear: both;
-  .wrapper {
-padding-top: 2em;
-padding-bottom: 2em;
-  }
-  nav {
-  div {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 1px solid;
-    text-align: center;
-    padding: 1em;
-  @include breakpoint (phablet) {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: left;
-    border: none;
-  }
-}
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    @include breakpoint (phablet) {
-      text-decoration: underline;
-      text-transform: inherit;
-    }
-  }
-  a:hover {
-  }
-}
-
 }

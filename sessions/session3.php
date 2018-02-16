@@ -37,7 +37,7 @@
 </p>
 <p class="author">Titiana, Reine de l'Été</p>
   </div>
-  <div class="note">
+  <div class="location">
     <?php include '../lieux/chult.php' ?>
   </div>
 </aside>

@@ -1,0 +1,37 @@
+header {
+  text-align: center;
+  border: 1px solid;
+  border-color: darken($background-color, 40%);
+  nav {
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: none;
+      @include breakpoint (laptop) {
+        background-color: $nav-background;
+        border-color: $nav-border;
+        display: inline-block;
+        border: 1px solid;
+        padding: 0.5em 1em;
+      }
+    }
+
+    li:hover {
+@include hover($nav-background, 10%);
+    }
+
+    a {
+      color: $nav-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    a:hover {}
+  }
+
+  a.maintitle {
+    text-decoration: none;
+  }
+}

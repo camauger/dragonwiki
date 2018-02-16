@@ -1,34 +1,21 @@
 @charset "UTF-8";
 /** Importation des fichiers partiaux **/
+/** Palette de couleurs **/
+/** Couleurs en fonction de la structure **/
+/** Couleurs en fonction du sujet traité **/
+/** Configuration **/
+/** Déclaration des tailles de polices avec backup en pixels **/
+/** Utilisation :
+p {
+  @include font-size(14px)
+}
+**/
+/** Déclaration des couleurs de boîtes et des bordures **/
 /*********************
 BREAKPOINTS
 *********************/
+/** Hovering **/
 /** Triangle **/
-/** Taille des polices **/
-h1 {
-  font-size: 150%; }
-
-h2 {
-  font-size: 130%; }
-
-h3 {
-  font-size: 120%; }
-
-body {
-  font-size: 115%; }
-
-header h1 {
-  font-size: 200%; }
-
-main.session h4 {
-  font-size: 95%; }
-
-aside h3 {
-  font-size: 110%; }
-
-.quote {
-  font-size: 120%; }
-
 /** Polices de caractère **/
 body {
   font-family: "Goudy Bookletter 1911", serif; }
@@ -36,80 +23,81 @@ body {
 header h1 {
   font-family: "Eagle Lake", cursive; }
 
-/** Styles de texte **/
-header {
-  text-align: center; }
+/** Taille des polices **/
+h1 {
+  font-size: 32px;
+  font-size: 2rem; }
 
-main.session h2 {
-  text-align: center; }
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem; }
+
+h3 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h4 {
+  font-size: 26px;
+  font-size: 1.625rem; }
+
+h5,
+h6 {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+header h1 {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
 main.session h4 {
-  text-align: center;
-  font-style: italic; }
+  font-size: 18px;
+  font-size: 1.125rem; }
+main.session li,
+main.session p {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 aside h3 {
-  text-align: center; }
+  font-size: 22px;
+  font-size: 1.375rem; }
+aside li,
+aside p {
+  font-size: 18px;
+  font-size: 1.125rem; }
 
-/** Palette de couleurs **/
-/** Contrôle des couleurs **/
-html {
-  background-color: #EEE5CE;
-  background-image: url("wikibackground.jpeg"); }
-
-header {
-  border-color: #a9a9a9;
-  background-color: none; }
-
-img {
-  width: 100%; }
-
-/** Headings **/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: #141414; }
-
-main h4 {
-  color: #909090; }
-
-header {
-  border: 1px solid;
-  border-color: #352b12; }
-  header nav li {
-    background-color: #352b12;
-    border-color: #0f0c05; }
-  header nav a {
-    color: #EEE5CE; }
-  header nav li:hover {
-    background-color: #5b4a1f;
-    border: 1px solid black;
-    transition: background-color, 0.3s;
-    transition: border, 0.3s; }
+.quote {
+  font-size: 22px;
+  font-size: 1.375rem; }
 
 footer {
-  background-color: #352b12; }
+  clear: both;
+  background-color: #2D2510; }
+  footer .wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em; }
   footer nav div, footer nav a {
-    color: #EEE5CE;
-    border-color: #EEE5CE; }
-
-/** Couleurs des boîtes de la page d'accueil **/
-.grid {
-  background-color: #e1d1a8;
-  border-color: #d4bd82; }
+    color: #F1E9D2;
+    border-color: #F1E9D2; }
 
 /** Boîtes de la page d'accueil **/
 .grid {
+  padding: 1em;
+  background-color: #bc9b3b;
+  border-color: #957b2f;
   display: block;
   width: 100%;
+  height: 220px;
   border: 1px solid;
   margin-bottom: 1em;
   text-align: center; }
   .grid a {
     text-decoration: none;
     text-transform: uppercase; }
+  .grid:hover {
+    background-color: #d3b971;
+    border: 1px solid #c7a64a;
+    transition: background-color, 0.3s;
+    transition: border, 0.3s; }
   @media (min-width: 37.5em) {
     .grid {
       width: 49%;
@@ -119,26 +107,407 @@ footer {
   .grid:nth-of-type(2), .grid:nth-of-type(4) {
     float: right; } }
 
+header {
+  text-align: center;
+  border: 1px solid;
+  border-color: #bc9b3b; }
+  header nav ul {
+    list-style: none; }
+  header nav li {
+    display: none; }
+    @media (min-width: 64em) {
+      header nav li {
+        background-color: #2D2510;
+        border-color: #070603;
+        display: inline-block;
+        border: 1px solid;
+        padding: 0.5em 1em; } }
+  header nav li:hover {
+    background-color: #53441d;
+    border: 1px solid #070603;
+    transition: background-color, 0.3s;
+    transition: border, 0.3s; }
+  header nav a {
+    color: #F1E9D2;
+    text-decoration: none;
+    text-transform: uppercase; }
+  header a.maintitle {
+    text-decoration: none; }
+
 /** Headings **/
-h1, h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #0B0B0B; }
+
+h1,
+h2 {
   padding-top: 1em;
   padding-bottom: 1em; }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   padding-top: 0.5em;
   padding-bottom: 0.5em; }
+
+main.session h2 {
+  text-align: center; }
+main.session h4 {
+  color: #939393;
+  text-align: center;
+  font-style: italic; }
+
+aside h3 {
+  text-align: center;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; }
+
+nav div {
+  width: 100%;
+  margin: 2em auto;
+  border: 1px solid;
+  text-align: center;
+  padding: 1em; }
+  @media (min-width: 37.5em) {
+    nav div {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      border: none; } }
+nav a {
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media (min-width: 37.5em) {
+    nav a {
+      text-decoration: underline;
+      text-transform: inherit; } }
+
+/** Paragraph Styles **/
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+aside p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+/** List Styles **/
+ul {
+  list-style: circle;
+  margin-left: 1.5em; }
+  ul li {
+    padding-bottom: 0.3em; }
+
+.bordering {
+  border: 1px solid #d9c384;
+  background-color: #e5d6ab;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/** Styles particuliers **/
+.pronounciation {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: #e5d6ab;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  margin-left: 0.1em;
+  margin-right: 0.1em; }
+
+/** Lignes horizontales **/
+hr {
+  overflow: visible;
+  /* For IE */
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+  text-align: center;
+  padding: 0;
+  color: black; }
+
+hr.pretty:after, aside .note hr:after, aside .character hr:after, aside .location hr:after, aside .quote hr:after, aside .organization hr:after, aside .spellcard hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 0.9em;
+  padding: 0 0.25em;
+  color: black; }
+
+aside .spellattributes {
+  font-style: italic; }
+aside .note {
+  padding: 1em;
+  background-color: #D9E4F5;
+  border-top: 1px solid #2b5ba4;
+  border-bottom: 1px solid #264f90;
+  border-left: 1px solid #2b5ba4;
+  border-right: 1px solid #2b5ba4; }
+  aside .note a {
+    color: #21447c; }
+  aside .note .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .note .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .note hr:after {
+  background: #D9E4F5; }
+aside .character {
+  padding: 1em;
+  background-color: #E8F1D4;
+  border-top: 1px solid #769531;
+  border-bottom: 1px solid #67822a;
+  border-left: 1px solid #769531;
+  border-right: 1px solid #769531; }
+  aside .character a {
+    color: #586f24; }
+  aside .character .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .character .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .character hr:after {
+  background: #E8F1D4; }
+aside .location {
+  padding: 1em;
+  background-color: #EED9C4;
+  border-top: 1px solid #8b5a28;
+  border-bottom: 1px solid #774d22;
+  border-left: 1px solid #8b5a28;
+  border-right: 1px solid #8b5a28; }
+  aside .location a {
+    color: #63401d; }
+  aside .location .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .location .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .location hr:after {
+  background: #EED9C4; }
+aside .quote {
+  padding: 1em;
+  background-color: #D7C498;
+  border-top: 1px solid #51421f;
+  border-bottom: 1px solid #3e3318;
+  border-left: 1px solid #51421f;
+  border-right: 1px solid #51421f; }
+  aside .quote a {
+    color: #2c2411; }
+  aside .quote .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .quote .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .quote hr:after {
+  background: #D7C498; }
+aside .organization {
+  padding: 1em;
+  background-color: #DAF4F0;
+  border-top: 1px solid #2fa08e;
+  border-bottom: 1px solid #2a8c7d;
+  border-left: 1px solid #2fa08e;
+  border-right: 1px solid #2fa08e; }
+  aside .organization a {
+    color: #24786b; }
+  aside .organization .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .organization .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .organization hr:after {
+  background: #DAF4F0; }
+aside .spellcard {
+  padding: 1em;
+  background-color: #ACACAC;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #202020;
+  border-left: 1px solid #2d2d2d;
+  border-right: 1px solid #2d2d2d; }
+  aside .spellcard a {
+    color: #131313; }
+  aside .spellcard .author {
+    font-style: italic;
+    text-align: right;
+    font-size: 90%; }
+    aside .spellcard .author:before {
+      content: "-";
+      font-family: "Raleway", sans-serif;
+      padding-right: 0.5em; }
+aside .spellcard hr:after {
+  background: #ACACAC; }
+
+/** Images **/
+img {
+  width: 100%; }
+
+main img {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+/** Bannières **/
+.banner {
+  height: 200px;
+  background-position: center center; }
+
+.tombofannihilation {
+  background-image: url("http://localhost:8888/campaign/images/tombofannihilation.jpg"); }
+
+/** Portraits **/
+.portrait {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/portrait.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .portrait .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .portrait .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .portrait .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+
+.aryana {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/aryana.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .aryana .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .aryana .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .aryana .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+
+.boddinoc {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/boddinoc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .boddinoc .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .boddinoc .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .boddinoc .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+
+.eauxvives {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/eauxvives.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .eauxvives .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .eauxvives .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .eauxvives .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+
+.takumeko {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/takumeko.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .takumeko .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .takumeko .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .takumeko .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+
+.solstice {
+  height: 500px;
+  background-image: url("http://localhost:8888/campaign/images/portraits/solstice.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .solstice .hero {
+    box-sizing: content-box;
+    height: 150px;
+    background: #e5d6ab;
+    position: relative;
+    top: 300px;
+    width: 100%; }
+    .solstice .hero h2 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .solstice .hero h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
 
 * {
   margin: 0;
   padding: 0;
   line-height: 1.2;
-  font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
 html {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  background-color: #F1E9D2;
+  background-image: url("wikibackground.jpeg"); }
 
 /** Control Body and Footer Wrapper Width **/
 .wrapper {
@@ -149,20 +518,12 @@ html {
       width: 100%;
       max-width: 960px; } }
 
-header {
-  margin-bottom: 1em; }
-
-img {
-  width: 100%; }
-
-/** Paragraph Styles **/
-p {
-  margin-top: 1em;
-  margin-bottom: 1em; }
-
-main.session, aside {
+/** Structure de la page avec main et aside **/
+aside,
+main {
   display: block;
   width: 100%;
+  margin-top: 1em;
   margin-bottom: 2em; }
 
 @media (min-width: 64em) {
@@ -175,125 +536,7 @@ main.session, aside {
     width: 30%;
     display: inline-block;
     float: right; } }
-aside h3 {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; }
-aside p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
 aside div {
   margin-bottom: 1em; }
-aside .note {
-  padding: 1em;
-  background-color: #eed5ce;
-  border: 1px solid #8c4531; }
-  aside .note a {
-    color: #663224; }
-  aside .note .author {
-    font-style: italic;
-    text-align: right;
-    font-size: 90%; }
-    aside .note .author:before {
-      content: "-";
-      font-family: "Raleway", sans-serif;
-      padding-right: 0.5em; }
-aside .character {
-  padding: 1em;
-  background-color: #e7eece;
-  border: 1px solid #788c31; }
-  aside .character a {
-    color: #586624; }
-  aside .character .author {
-    font-style: italic;
-    text-align: right;
-    font-size: 90%; }
-    aside .character .author:before {
-      content: "-";
-      font-family: "Raleway", sans-serif;
-      padding-right: 0.5em; }
-aside .quote {
-  padding: 1em;
-  background-color: #dac795;
-  border: 1px solid #53441d; }
-  aside .quote a {
-    color: #2d2510; }
-  aside .quote .author {
-    font-style: italic;
-    text-align: right;
-    font-size: 90%; }
-    aside .quote .author:before {
-      content: "-";
-      font-family: "Raleway", sans-serif;
-      padding-right: 0.5em; }
-aside .organization {
-  padding: 1em;
-  background-color: #dac795;
-  border: 1px solid #53441d; }
-  aside .organization a {
-    color: #2d2510; }
-  aside .organization .author {
-    font-style: italic;
-    text-align: right;
-    font-size: 90%; }
-    aside .organization .author:before {
-      content: "-";
-      font-family: "Raleway", sans-serif;
-      padding-right: 0.5em; }
-
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
-
-aside hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
-
-header nav ul {
-  list-style: none; }
-header nav li {
-  display: none; }
-  @media (min-width: 64em) {
-    header nav li {
-      display: inline-block;
-      border: 1px solid;
-      padding-left: 1em;
-      padding-right: 1em;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em; } }
-header nav a {
-  text-decoration: none;
-  text-transform: uppercase; }
-header a.maintitle {
-  text-decoration: none; }
-
-footer {
-  clear: both; }
-  footer .wrapper {
-    padding-top: 2em;
-    padding-bottom: 2em; }
-  footer nav div {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 1px solid;
-    text-align: center;
-    padding: 1em; }
-    @media (min-width: 37.5em) {
-      footer nav div {
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-        border: none; } }
-  footer nav a {
-    text-decoration: none;
-    text-transform: uppercase; }
-    @media (min-width: 37.5em) {
-      footer nav a {
-        text-decoration: underline;
-        text-transform: inherit; } }
 
 /*# sourceMappingURL=dragonwiki.css.map */

@@ -14,6 +14,9 @@
 
 <main class="session">
 <div class="">
+<p style="font-size: 24px;">
+Bonjour Félixe
+</p>
 
 
 <h2></h2>

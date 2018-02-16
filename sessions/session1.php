@@ -62,7 +62,7 @@ Un groupe d’orcs sont dans les parages, prêts à couper des arbres pour le si
 </div>
 </main>
 <aside class="">
-  <div class="note">
+  <div class="location">
     <?php include ('../lieux/gloradan.php'); ?>
   </div>
 
@@ -74,8 +74,8 @@ Un groupe d’orcs sont dans les parages, prêts à couper des arbres pour le si
 <p class="author">Dwinbar</p>
 </div>
   <div class="character">
-<h3>Malsum</h3>
-<p>Chevalier de Bahamut, Malsum dirigera un groupe de champions formé par Dwinbar. Ces héros finiront tués par erreur par d'autres héros, dans un tombeau d'Astufal... Malsum sera corrompu par Orcus et essaiera d'obtenir sa vengeance contre ceux qui l'ont vaincu. Mais ceci est une autre histoire...</p>
+    <?php include '../personnages/malsum.php' ?>
+
   </div>
 </aside>
 </div>

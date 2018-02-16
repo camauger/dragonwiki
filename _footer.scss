@@ -1,0 +1,16 @@
+footer {
+  clear: both;
+  background-color: $footer-background;
+
+  .wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  nav {
+    div, a {
+      color: $background-color;
+      border-color: $background-color;
+    }
+  }
+}

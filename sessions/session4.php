@@ -28,6 +28,10 @@
 </main>
 <aside class="">
 
+  <div class="location">
+    <?php include '../lieux/nyanzaru.php' ?>
+  </div>
+
   <div class="organization">
     <?php include '../organisations/thay.php' ?>
   </div>
@@ -35,6 +39,8 @@
   <div class="organization">
     <?php include '../organisations/zhentarim.php' ?>
   </div>
+
+
 
 </aside>
 </div>

@@ -1,41 +1,8 @@
-/** Taille des polices **/
-h1 { font-size: 150%;}
-h2 { font-size: 130%;}
-h3 { font-size: 120%;}
-body { font-size: 115%;}
-
-header {
-  h1 {
-    font-size: 200%;
-  }
-}
-
-
-main.session {
-  h4 {
-    font-size: 95%;
-  }
-}
-
-aside {
-  h3 {
-    font-size: 110%;
-
-  }
-}
-
-.quote {
-  font-size: 120%;
-}
-
 /** Polices de caractère **/
-
 $opensans: 'Open Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
 $eaglelake: 'Eagle Lake', cursive;
 $goudy: 'Goudy Bookletter 1911', serif;
-
-
 $font-primary: $goudy;
 $font-special: $raleway;
 
@@ -48,26 +15,56 @@ header {
     font-family: $eaglelake;
   }
 }
+/** Taille des polices **/
+h1 {
+  @include font-size(32px);
+}
 
-/** Styles de texte **/
+h2 {
+  @include font-size(30px);
+}
+
+h3 {
+  @include font-size(28px);
+}
+
+h4 {
+  @include font-size(26px);
+}
+
+h5,
+h6 {
+  @include font-size(22px);
+}
 
 header {
-    text-align: center;
+  h1 {
+    @include font-size(36px);
+  }
 }
 
 main.session {
-  h2 {
-    text-align: center;
-  }
-  h4  {
-    text-align: center;
-    font-style: italic;
+  h4 {
+    @include font-size(18px);
   }
 
+  li,
+  p {
+    @include font-size(20px);
+  }
 }
 
 aside {
   h3 {
-    text-align: center;
+    @include font-size(22px);
   }
+
+  li,
+  p {
+    @include font-size(18px);
+  }
+}
+
+.quote {
+  @include font-size(22px);
 }
