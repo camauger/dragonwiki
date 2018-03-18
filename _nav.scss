@@ -1,3 +1,8 @@
+/* Déclaration du nombre d'items dans le menu de navigation */
+$nav-items: "5";
+$nav-base-width: calc(100% / #{$nav-items});
+$nav-final-width: calc(#{$nav-base-width} * 0.90);
+
 nav {
   div {
     width: 100%;
@@ -13,13 +18,34 @@ nav {
     }
   }
 
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: none;
+    @include breakpoint (laptop) {
+      text-align: center;
+      width: $nav-final-width;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $nav-background;
+      border-color: $nav-border;
+      display: inline-block;
+      border: 1px solid;
+      padding: 0.5em 1em;
+    }
+  }
+
+  li:hover {
+    @include hover($nav-background, 10%);
+  }
+
   a {
+    color: $nav-color;
     text-decoration: none;
     text-transform: uppercase;
-    @include breakpoint (phablet) {
-      text-decoration: underline;
-      text-transform: inherit;
-    }
+    @include breakpoint (phablet) {}
   }
 
   a:hover {}

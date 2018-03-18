@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<?php
+  $title = "le titre de la page"; // Titre de la page
+  $description = "la description de la page"; // Description de la page
+  $banner = "tombofannihilation"; // Nom de l'image utilisée pour la bannière de la page
+ ?>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../dragonwiki.css">
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
-
-    <title>Session 1 - Gloradan</title>
-  </head>
-  <body>
-    <?php include "../header.php"; ?>
+<?php
+include '../head-sub.php'
+?>
 <div class="wrapper">
 
+
 <main class="session">
-<div class="">
+<article class="">
 
 
-<h2>Session 1 - Gloradan</h2>
-<hr>
-<h4>10 janvier 2018</h4>
+<header>
+  <h2>Session 1 - Gloradan</h2>
+  <hr>
+  <h4>10 janvier 2018</h4>
+</header>
 <p>Forteresse de Gloradan. C’est le printemps. Période agréable car les cols enneigés vont perdre leur blancheur et permettre plus facilement aux caravanes de marchands et d’explorateurs de venir à Gloradan.
 </p>
 <p>Les personnages, alors âgés d'une dizaine d'années, se trouvent en fin de journée sur les remparts de Gloradan. Ils s’amusent à faire voler un cerf-volant que leur a confectionner Melkor (vieux magicien pédagogue) sous le regard amical de Malsum (chevalier de Bahamut) et les froncements de sourcils de Vangrad d’Angoran (capitaine des gardes de Gloradan).
@@ -57,26 +57,24 @@ Les enfants proposent courageusement d'aller trouver eux-mêmes Dwinbar.
 <p>Vangrad leur apprend qu'ils peuvent sortir par un tunnel secret. Valindra le connaît probablement. Malsum et quelques archers protégent le départ des enfants.
 Un groupe d’orcs sont dans les parages, prêts à couper des arbres pour le siège. Les enfants parviennent à leur échapper et se rendent rapidement jusqu'au Bois des Fées.</p>
 
-
-
-</div>
+</article>
 </main>
 <aside class="">
-  <div class="location">
+  <article class="location">
     <?php include ('../lieux/gloradan.php'); ?>
-  </div>
+  </article>
 
-  <div class="character">
+  <article class="character">
 <?php include '../personnages/dwinbar.php' ?>
-  </div>
+</article>
   <div class="quote">
 <p>"Voyagez dans le temps, c'est très dangereux."</p>
 <p class="author">Dwinbar</p>
 </div>
-  <div class="character">
+  <article class="character">
     <?php include '../personnages/malsum.php' ?>
 
-  </div>
+  </article>
 </aside>
 </div>
 

@@ -10,7 +10,7 @@
   <body>
 
 
-<?php include "../header.php"; ?>
+    <?php include "../header-sub.php"; ?>
 
 <div class="wrapper">
 
@@ -19,6 +19,7 @@
 
 
 <h2>Session 4 - La Colère du Dragon Tortue</h2>
+<hr>
 <h4>7 février 2018</h4>
 <p>Dwinbar utilise ses derniers pouvoirs magiques pour envoyer les héros à Lantan, le territoire des gnomes de pierre.</p>
 <p>Les héros sont accueillis par Dunbar, le frère de Dwinbar, et l'un des grands mages d'Anchoril. Ils apprennent que de nombreuses personnes ont utilisés le cercle de téléportation d'Anchoril pour se rendre à Chult : des Mages Rouges de Thay, un vieux Tabaxi, des Zhentarim... et un Orc et une Halfling. L'Orc (Krishnak, bien entendu) parlait du Grand Serpent.</p>

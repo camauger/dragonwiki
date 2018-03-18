@@ -49,11 +49,11 @@ header h1 {
   font-size: 36px;
   font-size: 2.25rem; }
 
-main.session h4 {
+main article h4 {
   font-size: 18px;
   font-size: 1.125rem; }
-main.session li,
-main.session p {
+main article li,
+main article p {
   font-size: 20px;
   font-size: 1.25rem; }
 
@@ -108,58 +108,31 @@ footer {
     float: right; } }
 
 header {
-  text-align: center;
-  border: 1px solid;
-  border-color: #bc9b3b; }
-  header nav ul {
-    list-style: none; }
-  header nav li {
-    display: none; }
-    @media (min-width: 64em) {
-      header nav li {
-        background-color: #2D2510;
-        border-color: #070603;
-        display: inline-block;
-        border: 1px solid;
-        padding: 0.5em 1em; } }
-  header nav li:hover {
-    background-color: #53441d;
-    border: 1px solid #070603;
-    transition: background-color, 0.3s;
-    transition: border, 0.3s; }
-  header nav a {
-    color: #F1E9D2;
-    text-decoration: none;
-    text-transform: uppercase; }
+  text-align: center; }
+  header .mainheader {
+    border: 1px solid;
+    border-color: #bc9b3b; }
   header a.maintitle {
     text-decoration: none; }
 
 /** Headings **/
+p {
+  color: #0B0B0B; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  color: #0B0B0B; }
-
-h1,
-h2 {
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-h3,
-h4,
-h5,
 h6 {
+  color: #0B0B0B;
   padding-top: 0.5em;
   padding-bottom: 0.5em; }
 
-main.session h2 {
+main article h2 {
   text-align: center; }
-main.session h4 {
-  color: #939393;
+main article h4 {
+  color: #252525;
   text-align: center;
   font-style: italic; }
 
@@ -168,6 +141,7 @@ aside h3 {
   padding-top: 0.2em;
   padding-bottom: 0.2em; }
 
+/* Déclaration du nombre d'items dans le menu de navigation */
 nav div {
   width: 100%;
   margin: 2em auto;
@@ -180,13 +154,30 @@ nav div {
       margin-bottom: 0;
       text-align: left;
       border: none; } }
+nav ul {
+  list-style: none; }
+nav li {
+  display: none; }
+  @media (min-width: 64em) {
+    nav li {
+      text-align: center;
+      width: calc(calc(100% / 5) * 0.90);
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #2D2510;
+      border-color: #070603;
+      display: inline-block;
+      border: 1px solid;
+      padding: 0.5em 1em; } }
+nav li:hover {
+  background-color: #53441d;
+  border: 1px solid #070603;
+  transition: background-color, 0.3s;
+  transition: border, 0.3s; }
 nav a {
+  color: #F1E9D2;
   text-decoration: none;
   text-transform: uppercase; }
-  @media (min-width: 37.5em) {
-    nav a {
-      text-decoration: underline;
-      text-transform: inherit; } }
 
 /** Paragraph Styles **/
 p {
@@ -520,11 +511,14 @@ html {
 
 /** Structure de la page avec main et aside **/
 aside,
-main {
-  display: block;
-  width: 100%;
+main article {
   margin-top: 1em;
   margin-bottom: 2em; }
+
+aside,
+main.fullwidth {
+  display: block;
+  width: 100%; }
 
 @media (min-width: 64em) {
   main.session {
@@ -536,7 +530,10 @@ main {
     width: 30%;
     display: inline-block;
     float: right; } }
+aside article,
 aside div {
   margin-bottom: 1em; }
+
+/* spellcards */
 
 /*# sourceMappingURL=dragonwiki.css.map */

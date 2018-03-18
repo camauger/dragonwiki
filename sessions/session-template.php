@@ -13,18 +13,25 @@
 <div class="wrapper">
 
 <main class="session">
-<div class="">
-<p style="font-size: 24px;">
-Bonjour Félixe
-</p>
+<article class="">
+  <header>
 
+  </header>
+  <footer>
+  </footer>
 
-<h2></h2>
-<h4></h4>
-<p></p>
+</article>
  </main>
 <aside class="">
+  <section>
 
+  </section>
+  <section>
+
+  </section>
+  <section>
+
+  </section>
 </aside>
 </div>
 </body>

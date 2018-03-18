@@ -1,23 +1,16 @@
-<!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dragonwiki.css">
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
-
-
-    <title></title>
-  </head>
-  <body>
 <?php
-include './header.php'
-?>
-<div class="banner tombofannihilation">
+  $title = "le titre de la page"; // Titre de la page
+  $description = "la description de la page"; // Description de la page
+  $banner = "tombofannihilation"; // Nom de l'image utilisée pour la bannière de la page
+ ?>
 
-</div>
-<main>
+<?php
+include './head.php'
+?>
 <div class="wrapper">
+
+<main>
 
 
 <div class="grid">
@@ -54,14 +47,9 @@ include './header.php'
   </a>
 </div>
 
-</div>
+
 </main>
+</div>
 
-
-<footer>
 <?php
 include 'footer.php' ?>
-</footer>
-
-</body>
-</html>
