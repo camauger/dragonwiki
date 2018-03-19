@@ -30,12 +30,6 @@ include '../head-sub.php'
 </main>
 <aside class="">
 
-<div class="character">
-  <?php
-  $character = file_get_contents('../creatures/terros.php');
-  echo "$character";
-  ?>
-</div>
 
 <div class="location">
   <?php
@@ -44,23 +38,9 @@ include '../head-sub.php'
   ?>
 </div>
 
-<div class="location">
-  <?php
-  $location = file_get_contents('../lieux/coeurdragon.php');
-  echo "$location";
-  ?>
-</div>
-
-<div class="location">
-  <?php
-  $location = file_get_contents('../lieux/hrakamar.php');
-  echo "$location";
-  ?>
-</div>
-
 <div class="character">
   <?php
-  $location = file_get_contents('../personnages/ubtao.php');
+  $location = file_get_contents('../personnages/fuk.php');
   echo "$location";
   ?>
 </div>

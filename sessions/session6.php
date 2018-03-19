@@ -22,6 +22,9 @@ include '../head-sub.php'
 <p>Un prêtre de Tymora propose aux héros de faire une offrande au temple, pour célébrer leur victoire à la course de dinosaures.</p>
 <p>Les héros se rendent à la Gorge de Malar, en dehors des murs, pour faire leur offrande à Tymora. Peu après, le quartier est attaqué par une horde de morts-vivants : des zombies menés par des Ghasts possédant un tatouage de triangle bleu sur le front.</p>
 <p>Les héros parviennent à sauver quelques habitants avant de battre retraite à l'intérieur de la cité.</p>
+
+<img src="../images/ghoul.png" alt="">
+
 </article>
  </main>
 <aside class="">
@@ -33,33 +36,15 @@ include '../head-sub.php'
   ?>
 </div>
 
-<div class="location">
-  <?php
-  $location = file_get_contents('../lieux/orolunga.php');
-  echo "$location";
-  ?>
-</div>
-
-<div class="location">
-  <?php
-  $location = file_get_contents('../lieux/coeurdragon.php');
-  echo "$location";
-  ?>
-</div>
-
-<div class="location">
-  <?php
-  $location = file_get_contents('../lieux/hrakamar.php');
-  echo "$location";
-  ?>
-</div>
-
 <div class="character">
   <?php
-  $location = file_get_contents('../personnages/ubtao.php');
+  $location = file_get_contents('../personnages/tymora.php');
   echo "$location";
   ?>
 </div>
+
+
+
 
 </aside>
 </div>

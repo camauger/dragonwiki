@@ -47,6 +47,33 @@ include './head.php'
   </a>
 </div>
 
+<div class="grid">
+  <a href="sessions/session6.php">
+    <h3>Session 6</h3>
+  <h2>L'assaut des morts-vivants</h2>
+  </a>
+</div>
+
+<div class="grid">
+  <a href="sessions/session7.php">
+    <h3>Session 7</h3>
+  <h2>Le Triomphe</h2>
+  </a>
+</div>
+
+<div class="grid">
+  <a href="sessions/session8.php">
+    <h3>Session 8</h3>
+  <h2>Le Doigt de Feu</h2>
+  </a>
+</div>
+
+<div class="grid">
+  <a href="sessions/session9.php">
+    <h3>Session 9</h3>
+  <h2>Dungrunglung</h2>
+  </a>
+</div>
 
 </main>
 </div>

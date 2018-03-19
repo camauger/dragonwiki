@@ -104,7 +104,10 @@ footer {
       display: inline-block; } }
 
 @media (min-width: 37.5em) {
-  .grid:nth-of-type(2), .grid:nth-of-type(4) {
+  .grid:nth-of-type(2),
+  .grid:nth-of-type(4),
+  .grid:nth-of-type(6),
+  .grid:nth-of-type(8) {
     float: right; } }
 
 header {
@@ -234,6 +237,7 @@ hr.pretty:after, aside .note hr:after, aside .character hr:after, aside .locatio
   color: black; }
 
 aside .spellattributes {
+  margin-top: 0.5em;
   font-style: italic; }
 aside .note {
   padding: 1em;
@@ -332,13 +336,13 @@ aside .organization hr:after {
   background: #DAF4F0; }
 aside .spellcard {
   padding: 1em;
-  background-color: #ACACAC;
-  border-top: 1px solid #2d2d2d;
-  border-bottom: 1px solid #202020;
-  border-left: 1px solid #2d2d2d;
-  border-right: 1px solid #2d2d2d; }
+  background-color: #dfdfdf;
+  border-top: 1px solid #606060;
+  border-bottom: 1px solid #535353;
+  border-left: 1px solid #606060;
+  border-right: 1px solid #606060; }
   aside .spellcard a {
-    color: #131313; }
+    color: #464646; }
   aside .spellcard .author {
     font-style: italic;
     text-align: right;
@@ -348,7 +352,7 @@ aside .spellcard {
       font-family: "Raleway", sans-serif;
       padding-right: 0.5em; }
 aside .spellcard hr:after {
-  background: #ACACAC; }
+  background: #dfdfdf; }
 
 /** Images **/
 img {
@@ -533,7 +537,5 @@ main.fullwidth {
 aside article,
 aside div {
   margin-bottom: 1em; }
-
-/* spellcards */
 
 /*# sourceMappingURL=dragonwiki.css.map */

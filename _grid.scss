@@ -1,5 +1,4 @@
 /** Boîtes de la page d'accueil **/
-
 .grid {
   padding: 1em;
   background-color: darken($grid-color, 10%);
@@ -10,21 +9,26 @@
   border: 1px solid;
   margin-bottom: 1em;
   text-align: center;
+
   a {
     text-decoration: none;
     text-transform: uppercase;
   }
+
   &:hover {
     @include hover($grid-color, 5%);
   }
   @include breakpoint (phablet) {
-  width: 49%;
-  display: inline-block;
-}
+    width: 49%;
+    display: inline-block;
+  }
 }
 
-.grid:nth-of-type(2), .grid:nth-of-type(4) {
-    @include breakpoint (phablet) {
-  float: right;
-}
+.grid:nth-of-type(2),
+.grid:nth-of-type(4),
+.grid:nth-of-type(6),
+.grid:nth-of-type(8) {
+  @include breakpoint (phablet) {
+    float: right;
+  }
 }

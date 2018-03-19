@@ -61,6 +61,7 @@ hr.pretty:after {
 
 aside {
   .spellattributes {
+    margin-top: 0.5em;
     font-style: italic;
   }
   @each $name in $sidenotemap {
@@ -78,10 +79,8 @@ aside {
   }
 }
 /** Images **/
-
 img {
   width: 100%;
-
 }
 
 main img {
@@ -100,8 +99,6 @@ main img {
   }
 }
 /** Portraits **/
-
-
 @each $name in 'portrait' 'aryana' 'boddinoc' 'eauxvives' 'takumeko' 'solstice' {
   .#{$name} {
     height: 500px;
@@ -109,6 +106,7 @@ main img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
     .hero {
       box-sizing: content-box;
       height: 150px;
@@ -116,11 +114,13 @@ main img {
       position: relative;
       top: 300px;
       width: 100%;
+
       h2 {
-        @include font-size(24px) ;
+        @include font-size(24px);
       }
+
       h3 {
-        @include font-size(20px) ;
+        @include font-size(20px);
       }
     }
   }

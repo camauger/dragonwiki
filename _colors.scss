@@ -23,5 +23,5 @@ $character: $chromewhite;
 $quote: $pavlova;
 $organization: $iceberg;
 $location: $almond;
-$spellcard: $silverchalice;
+$spellcard: lighten($silverchalice, 20%);
 $portrait: darken($background-color, 10%);

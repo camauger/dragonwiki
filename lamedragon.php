@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<?php
+  $title = "le titre de la page"; // Titre de la page
+  $description = "la description de la page"; // Description de la page
+  $banner = "tombofannihilation"; // Nom de l'image utilisée pour la bannière de la page
+ ?>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dragonwiki.css">
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Goudy+Bookletter+1911|Open+Sans|Raleway" rel="stylesheet">
-
-    <title>Lame-Dragon</title>
-  </head>
-  <body>
-    <?php include "./header.php"; ?>
-  <body>
+<?php
+include 'head.php'
+?>
 <div class="wrapper">
 <main class="session">
+  <article class="">
+
 
 <h2>Lame-Dragon Eladrin</h2>
 <hr>
@@ -58,9 +56,11 @@ Le Lame-Dragon gagne les avantages suivants contre la cible :
 <br>
 
 </main>
+</article>
 <aside class="">
   <div class="spellcard">
     <h3>Disparition féérique</h3>
+    <hr>
   <div class="spellattributes">
     [ Misty Step ] - niveau 2 - invocation
     <br>Temps d'incantation : 1 action bonus
@@ -73,7 +73,8 @@ Le Lame-Dragon gagne les avantages suivants contre la cible :
   </div>
 
   <div class="spellcard">
-  <h3>Flame Draconique</h3>
+  <h3>Flamme Draconique</h3>
+      <hr>
   <div class="spellattributes">
     [ Eldritch Blast ] - niveau 0 - évocation
     <br>Temps d'incantation : 1 action
@@ -88,6 +89,7 @@ Le Lame-Dragon gagne les avantages suivants contre la cible :
 
   <div class="spellcard">
   <h3>Prestidigitation</h3>
+      <hr>
   <div class="spellattributes">
     [ Prestidigitation ] - niveau 0 - transmutation
     <br>Temps d'incantation : 1 action
@@ -108,6 +110,7 @@ Le Lame-Dragon gagne les avantages suivants contre la cible :
 
 <div class="spellcard">
 <h3>Mot de radiance</h3>
+    <hr>
 <div class="spellattributes">
   [ Word of radiance ] - niveau 0 - évocation
   <br>Temps d'incantation : 1 action
@@ -121,6 +124,7 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
 
   <div class="spellcard">
   <h3>Vengeance du Dragon</h3>
+      <hr>
   <div class="spellattributes">
     [ Hellish Rebuke ] - niveau 1 - évocation
     <br>Temps d'incantation : 1 réaction
@@ -134,6 +138,7 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
 
 <div class="spellcard">
 <h3>Bouclier</h3>
+    <hr>
 <div class="spellattributes">
   [ Shield ] - niveau 1 - abjuration
   <br>Temps d'incantation : 1 réaction
@@ -146,6 +151,7 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
 
   <div class="spellcard">
   <h3>Lame d'argent</h3>
+      <hr>
   <div class="spellattributes">
     [ Shadow Blade ] - niveau 2 - illusion
     <br>Temps d'incantation : 1 action bonus
@@ -155,15 +161,17 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
   </div>
 <p>Le Lame-Dragon enchante son arme avec un mot de pouvoir : radiance, froid ou psychique. Les dégâts infligés par l'arme deviennent du type d'enchantement choisi et sont augmentés de 1d8. Le premier jet d'attaque effectué avec l'arme obtient l'avantage.
 </p>
+<p>Les dégâts de Flamme Draconique sont augmentés de 1d6, mais demeurent des dégâts de force.</p>
 <ul>
   <li><strong>Lame de radiance -</strong> Les créatures touchées par l'arme perdent l'invisibilité et ne peuvent devenir invisible pendant la durée du sort.</li>
-  <li><strong>Lame de froid -</strong> Le Lame-Dragon gagne résistance au feu et au froid.</li>
+  <li><strong>Lame de froid -</strong> Le Lame-Dragon gagne une résistance partielle au feu et au froid (les 5 premiers dégâts sont ignorés chaque tour).</li>
   <li><strong>Lame psychique -</strong> Le bonus de maîtrise est doublé pour les attaques et le Lame-Dragon peut utiliser sa réaction pour obtenir +2 sur sa CA et ses jets de sauvegarde jusqu'à la fin de son prochain tour.</li>
 </ul>
     </div>
 
   <div class="spellcard">
   <h3>Manteau des Fées</h3>
+      <hr>
   <div class="spellattributes">
     [ Blur ] - niveau 2 - illusion
     <br>Temps d'incantation : 1 action
@@ -176,6 +184,7 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
 
 <div class="spellcard">
 <h3>Immobilisation</h3>
+<hr>
 <div class="spellattributes">
   [ Hold Person ] - niveau 2 - enchantement
   <br>Temps d'incantation : 1 action
@@ -188,5 +197,6 @@ Les dégâts du sort augmentent de 1d6 lorsque au niveau 5 (2d6), niveau 11 (3d6
 
 </aside>
 </div>
-  </body>
+  <?php include 'footer.php' ?>
+
 </html>
