@@ -28,6 +28,10 @@ html {
 .wrapper {
   width: 90%;
   margin: auto;
+  max-width: 600px;
+  @include breakpoint (phablet) {
+    max-width: 600px;
+  };
   @include breakpoint (laptop) {
     width: 100%;
     max-width: 960px;

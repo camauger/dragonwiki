@@ -507,7 +507,11 @@ html {
 /** Control Body and Footer Wrapper Width **/
 .wrapper {
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  max-width: 600px; }
+  @media (min-width: 37.5em) {
+    .wrapper {
+      max-width: 600px; } }
   @media (min-width: 64em) {
     .wrapper {
       width: 100%;
